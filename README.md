@@ -1,2 +1,5 @@
-# automation_for_teacher
-automation for teacher
+# 선생님들을 위한 업무자동화 코드
+
+1. 한글 자동화 (진행중)
+2. 엑셀 자동화 (예정)
+3. 기타 자동화 (예정)
