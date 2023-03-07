@@ -105,9 +105,7 @@ def select_file():
     return hwpx
 
 if __name__ == '__main__':
-    hwp = start_hwp()
-    file = select_file()
-    hwp.Open(file)
+    hwp = start_hwp(visible=True, open_file=select_file())
     end = end_position()
 
     # 본문 자간조정
