@@ -4,13 +4,17 @@ from tkinter.filedialog import askopenfilename
 import os
 
 
-def start_hwp():
-    """
-    한글 시작 함수
-    """
-    hwp = win32.gencache.EnsureDispatch("hwpframe.hwpobject")
-    hwp.XHwpWindows.Item(0).Visible = True
-    hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModule")
+def start_hwp(visible=False, open_file=None):
+    
+    hwp = win32.gencache.EnsureDispatch("HWPFrame.HwpObject")
+
+    if visible:
+        hwp.XHwpWindows.Item(0).Visible = True
+ 
+    if open_file:
+        hwp.Open(open_file)
+    else:
+        pass
     return hwp
 
 
