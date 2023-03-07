@@ -3,9 +3,11 @@ from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 import os
 
-hwp = win32.gencache.EnsureDispatch("HWPFrame.HwpObject")
+
 
 def start_hwp(visible=False, open_file=None):
+    
+    hwp = win32.gencache.EnsureDispatch("HWPFrame.HwpObject")
 
     if visible:
         hwp.XHwpWindows.Item(0).Visible = True
