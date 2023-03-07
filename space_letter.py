@@ -104,10 +104,6 @@ def select_file():
     win.quit()  # GUI 종료
     return hwpx
 
-# path = 'C:\\Users\\kangj\\OneDrive\\바탕 화면\\han_auto'
-# file_name = 'sample_3.hwp'
-# open_file=path+"\\"+file_name
-
 if __name__ == '__main__':
     hwp = start_hwp()
     file = select_file()
